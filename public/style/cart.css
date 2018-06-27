@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    margin-left: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.cart-detail tr th,
+td {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.promotion-code {
+    border: 1px solid lightgray;
+}
+
+.promotion-code p {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.promotion-code input {
+    width: 45%;
+    border-radius: 10px;
+    line-height: 40px;
+}
+
+.promotion-code button {
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: rgba(80, 167, 48, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sum-quantity {
+    border: 1px solid lightgray;
+}
+
+.sum-quantity p {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.sum-quantity div {
+    text-align: right;
+}
+
+.sum-quantity button {
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: rgba(80, 167, 48, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
+}

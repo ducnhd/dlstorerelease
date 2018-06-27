@@ -1,0 +1,124 @@
+<nav aria-label="breadcrumb">
+    <p>{{title}}</p>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/shop">Shop</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">{{title}}</li>
+    </ol>
+</nav>
+
+<div class="container">
+    <div class="row main-product">
+        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+            <div class="block-gallery">
+                <div class="gallery-preview-panel">
+                    <div class="gallery-preview-panel__content">
+                        <img id="product" style="opacity: 1;" class="pdp-mod-common-image gallery-preview-panel__image" src="{{imagepathLarge}}">
+                    </div>
+                </div>
+                <div class="next-slick next-slick-outer next-slick-horizontal">
+                    <div class="next-slick-inner next-slick-initialized">
+                        <div class="next-slick-list">
+                            <div class="next-slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                                <div style="outline:none;width:52px" class="next-slick-slide next-slick-active item-gallery__thumbnail" main_image_number="1">
+                                    <div class="item-gallery__image-wrapper">
+                                        <img data-title="{{imagepathLarge}}" class="pdp-mod-common-image item-gallery__thumbnail-image active"
+                                            src="{{imagepathLarge}}" style="opacity: 1;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+            <p class="product-name">{{title}}</p>
+            <p class="product-price">{{pricing}}</p>
+            <hr>
+            <hr>
+            <div class="size">
+                <label for="size">Size: </label>
+                <input placeholder="Chọn một tùy chọn" list="sizeList" id="size" name="size" />
+                <datalist id="sizeList">
+                    <option value="M"></option>
+                    <option value="S"></option>
+                    <option value="X"></option>
+                    <option value="XL"></option>
+                    <option value="XXL"></option>
+                </datalist>
+            </div>
+            <div class="quantity">
+                <input onchange="inputChange()" id="quantity" type="number" min="1" max="5" value="1" step="1" />
+                <button onclick="moveToCart()">Thêm vào giỏ</button>
+            </div>
+            <div class="code">
+                Mã: N/A
+            </div>
+
+            <div class="menu">
+                Danh mục:
+                <span>
+                    <a href="shop.html">Áo khoác</a>,
+                </span>
+                <span>
+                    <a href="shop.html">Áo thun nữ</a>
+                </span>
+            </div>
+
+            <div class="tag">
+                Tags:
+                <span>
+                    <a href="../printTshirt.html">Mẫu áo nữ</a>
+                </span>
+                <span>
+                    <a href="../../index.html">dl.vn</a>
+                </span>
+                <span>
+                    <a href="#">công ty</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row description">
+        <div class="col-5 description-item">
+            <p>Mô tả</p>
+            <hr>
+            <p>Đánh giá (0)</p>
+            <hr>
+        </div>
+        <div class="col-7 description-content">
+            <p>
+                <b>Product Description</b>
+            </p>
+            <p style="color: aqua">
+                <b>Áo phông Lucky Cat 01</b>
+            </p>
+            <ul>
+                <li>Size: S, M, L, XL, XXL</li>
+                <li>Màu: đen</li>
+                <li>Form: áo thun unisex</li>
+                <li>Có thể in hình theo yêu cầu (giá tùy thuộc hình in)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="rating">
+        <div class="start">
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+        </div>
+        <div>
+            <p>Đánh giá bài viết</p>
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/purchase.js">
+</script>

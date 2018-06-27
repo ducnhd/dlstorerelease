@@ -1,0 +1,66 @@
+footer {
+    margin-top: 20px;
+    clear: both;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: tomato;
+    min-height: 250px;
+}
+
+footer ul {
+    padding-top: 10px;
+    list-style: none;
+    height: 170px;
+}
+
+footer li {
+    width: 19%;
+    height: 150px;
+    float: left;
+    border-right: white dashed 2px;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.left {
+    border-right: none !important;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+#some {
+    background-color: rgb(0, 166, 146);
+    border-radius: 5px;
+    border: rgb(0, 166, 146) 1px solid;
+    float: right;
+    margin: 0;
+}
+
+#mail {
+    float: left;
+    background-color: rgb(6, 207, 183);
+    border-radius: 2px;
+}
+
+#mail img {
+    margin: 3px 5px;
+    width: 25px;
+    height: 25px;
+}
+
+#some p {
+    padding: 3px 8px;
+    color: black;
+    float: left;
+    font-size: 14px;
+}

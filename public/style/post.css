@@ -1,0 +1,45 @@
+div.overlay {
+    background-color: rgba(0, 0, 0, .25);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div.overlay>div.login-wrapper {
+    align-self: center;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 2px;
+    padding: 6px;
+    width: 50%;
+}
+
+div.overlay>div.login-wrapper>div.login-content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 24px;
+    position: relative;
+}
+
+div.overlay>div.login-wrapper>div.login-content>h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.8em;
+    margin: 0 0 1.25em;
+    padding: 0;
+}
+
+#post-title,
+#post-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#post-content {
+    height: 500px;
+}

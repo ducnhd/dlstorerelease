@@ -1,0 +1,133 @@
+<link rel="stylesheet" type="text/css" media="screen" href="/style/customer.css" />
+<script src="/javascript/customer.js"></script>
+
+<h2 id="title">Quản lý khách hàng</h2>
+
+<form id="search" class="form-inline">
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="input" class="sr-only">Search</label>
+        <input type="text" class="form-control" id="input" placeholder="Search" onkeyup="return search()">
+        <img class="icon" src="/images/icon/icon-search.png" alt="">
+    </div>
+
+</form>
+
+<section id="customer">
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Nguyễn Văn An</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(1)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Trần Quốc Bình</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(2)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Đào Thị Hương</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(3)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Lý Nam Đế</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(4)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Hoàng Văn Thụ</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(5)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Hồ Con Rùa</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(6)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+    <div class="customer">
+        <img src="/images/admin/customer.png" alt="">
+        <div class="decribe">
+            <p>MSKH: C01240</p>
+            <p>Tên: Nguyễn Thị Minh Khai</p>
+            <p>Địa chỉ: Hà Nội</p>
+            <p>Email: something@gmail.com</p>
+            <p>Phone: 01643614198</p>
+            <a onclick="return edit(7)" href="#">Chi tiết >></a>
+        </div>
+    </div>
+</section>
+
+<div class="overlay edit-customer" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <a onclick="return exit()" class="close">x</a>
+            <h3>Khách hàng</h3>
+            <form>
+                <div class="image">
+                    <img src="/images/admin/none.jpg" alt="none">
+                    <input type="file" name="mf" id="mf">
+                    <br>
+                    <br>
+                    <label for="mu">URL: </label>
+                    <input type="url" name="mu" id="mu">
+                    <br>
+                </div>
+                <div id="form">
+                    <label for="code">Mã:</label>
+                    <input class="text" type="text" name="code" id="code">
+                    <br>
+                    <label for="name">Tên:</label>
+                    <input class="text" type="text" name="name" id="name">
+                    <br>
+                    <label for="addr">Địa chỉ:</label>
+                    <input type="text" name="addr" id="addr">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="decribe">Ghi chú: </label>
+                    <br>
+                    <textarea type="text" name="decribe" id="decribe"></textarea>
+                    <br>
+                    <button id="change" type="submit" class="btn btn-info">Thay đổi</button>
+                    <button id="del" type="submit" class="btn btn-danger">Xóa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

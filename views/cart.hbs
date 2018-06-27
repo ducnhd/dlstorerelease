@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="/style/cart.css">
+<link rel="stylesheet" href="/style/contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav aria-label="breadcrumb">
+    <p>Cart</p>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/shop">Shop</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/shop">Áo thun cổ tròn</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">Cart</li>
+    </ol>
+</nav>
+
+<div class="container">
+    <p>Bạn có
+        <span>
+            <b>3</b>
+        </span> sản phẩm trong giỏ hàng</p>
+    <hr>
+    <table class="cart-detail">
+        <colgroup>
+            <col style="width: 200px">
+            <col style="width: 500px">
+            <col style="width: 200px">
+            <col style="width: 200px">
+            <col style="width: 200px">
+        </colgroup>
+        <tr>
+            <th>
+                Sản phẩm
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th>
+                Giá bán
+            </th>
+            <th>
+                Số lượng
+            </th>
+            <th>
+                Tổng cộng
+            </th>
+        </tr>
+        <tr class="description">
+            <td>
+                <img src="/images/cart/1_full.png" width="100%">
+            </td>
+            <td>
+                <p style="color: blue">Áo thun khoác cổ tròn</p>
+                <p>Size: M</p>
+            </td>
+            <td>
+                <p id="price">200000</p>
+            </td>
+            <td>
+                <p>
+                    <span id="quantity">1</span>
+                    <img src="/images/arrow/up-arrow-black.png">
+                </p>
+            </td>
+            <td>
+                <p id="money">200000</p>
+            </td>
+        </tr>
+        <tr class="description">
+            <td>
+                <img src="/images/cart/1_full.png" width="100%">
+            </td>
+            <td>
+                <p style="color: blue">Áo thun khoác cổ tròn</p>
+                <p>Size: M</p>
+            </td>
+            <td>
+                <p id="price">200000</p>
+            </td>
+            <td>
+                <p>
+                    <span id="quantity">1</span>
+                    <img src="/images/arrow/up-arrow-black.png">
+                </p>
+            </td>
+            <td>
+                <p id="money">200000</p>
+            </td>
+        </tr>
+        <tr class="description">
+            <td>
+                <img src="/images/cart/1_full.png" width="100%">
+            </td>
+            <td>
+                <p style="color: blue">Áo thun khoác cổ tròn</p>
+                <p>Size: M</p>
+            </td>
+            <td>
+                <p id="price">200000</p>
+            </td>
+            <td>
+                <p>
+                    <span id="quantity">1</span>
+                    <img src="/images/arrow/up-arrow-black.png">
+                </p>
+            </td>
+            <td>
+                <p id="money">200000</p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <div class="row">
+        <div class="col-5 promotion-code">
+            <p>Nhập mã khuyến mãi</p>
+            <hr>
+            <input type="text" placeholder="Nhập mã khuyến mãi">
+            <button>Sử dụng thẻ khuyến mãi</button>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-6 sum-quantity">
+            <p>Tổng số lượng</p>
+            <hr>
+            <p>Tổng cộng:
+                <span id="sum"></span>
+            </p>
+            <div>
+                <button data-toggle="modal" data-target="#myModal">Tiến hành thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Thanh toán với</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <button id="payCOD" class="btn btn-primary">COD</button>
+                    </div>
+                    <div>
+                        <button id="payPaypal" class="btn btn-primary">Paypal</button>
+                    </div>
+                    <div>
+                        <button id="payVNPay" class="btn btn-primary">NganLuong.vn</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rating">
+        <div class="start">
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+            <span class="rate fa fa-star"></span>
+        </div>
+        <div>
+            <p>Đánh giá</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="/javascript/topic.js"></script>
+<script src="/javascript/cart.js"></script>

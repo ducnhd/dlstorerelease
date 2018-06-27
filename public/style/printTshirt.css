@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    margin-left: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.container {
+    width: 90% !important;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: 15%;
+    float: left;
+    margin-left: 10px;
+}
+
+.product-image img {
+    width: 90%;
+}
+
+.product-content a.title {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.product-holder {
+    float: left;
+    margin-right: 10px;
+}
+
+.product-time {
+    float: left;
+    margin-right: 10px;
+}
+
+.product-item {
+    float: left;
+    margin-right: 10px;
+}

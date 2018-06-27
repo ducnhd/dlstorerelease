@@ -1,0 +1,142 @@
+<link rel="stylesheet" type="text/css" media="screen" href="/style/clothes.css" />
+<script src="/javascript/partern.js"></script>
+
+<h2 id="title">Quản lý hình mẫu</h2>
+
+<section id="form">
+    <form id="search" class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="input" class="sr-only">Search</label>
+            <input name="input" type="text" class="form-control" id="input" placeholder="Search" onkeyup="return search()">
+            <img class="icon" src="/images/icon/icon-search.png" alt="">
+        </div>
+
+        <a href="#"></a>
+    </form>
+</section>
+
+<button type="button" class="btn add new-partern">Thêm mẫu</button>
+
+<section id="fashion">
+    <div class="fashion" data-code="A001">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu xyz</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A002">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu xya</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A003">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu xaz</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A004">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu abc</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A005">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu lmx</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A006">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu xyb</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A007">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu abd</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A008">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu bcd</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A009">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu azy</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A010">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu zyx</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A011">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu caz</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+    <div class="fashion" data-code="A012">
+        <img id="icon1" src="/images/admin/partern.png" alt="">
+        <p>Mẫu mna</p>
+        <p style="color: #ff8a00">Giá: 000 vnđ</p>
+        <img class="edit cursor" src="/images/admin/icon-info.png" alt="info">
+        <img src="/images/admin/icon-del.png" alt="del" class="cursor del">
+    </div>
+</section>
+
+<div class="overlay add-partern" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <a class="close">x</a>
+            <h3>Thêm áo</h3>
+            <form>
+                <div class="image">
+                    <img src="/images/admin/none.jpg" alt="none">
+                    <input type="file" name="mf" id="mf">
+                    <br>
+                    <br>
+                    <label for="mu">URL: </label>
+                    <input type="url" name="mu" id="mu">
+                    <br>
+                </div>
+                <div id="form">
+                    <label for="code">Mã mẫu:</label>
+                    <input class="text" type="text" name="code" id="code">
+                    <br>
+                    <label for="name">Tên mẫu:</label>
+                    <input class="text" type="text" name="name" id="name">
+                    <br>
+                    <label for="price">Giá:</label>
+                    <input class="number" type="number" name="price" id="price" step="1000">
+                    <br>
+                    <label for="decribe">Mô tả: </label>
+                    <br>
+                    <textarea type="text" name="decribe" id="decribe"></textarea>
+                    <br>
+                    <button id="add" type="submit" class="btn btn-success">Thêm áo</button>
+                    <button id="change" type="submit" class="btn btn-info">Thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

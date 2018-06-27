@@ -1,0 +1,69 @@
+div.overlay {
+    background-color: rgba(0, 0, 0, .25);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 100%;
+}
+
+div.overlay>div.login-wrapper {
+    align-self: center;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 2px;
+    padding: 6px;
+    float: left;
+    width: 50%;
+}
+
+div.overlay>div.login-wrapper>div.login-content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 24px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+div.overlay>div.login-wrapper>div.login-content>h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.8em;
+    margin: 0 0 1.25em;
+    padding: 0;
+}
+
+.image {
+    float: left;
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    background-image: url(../public/images/admin/none.jpg)
+}
+
+div#form {
+    float: left;
+    margin-left: 10%;
+    width: 50%;
+}
+
+div#form>input.text,
+div#form>input.number {
+    width: 75%;
+    float: right;
+}
+
+div#form>p {
+    padding-left: 100px;
+}
+
+#decribe {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}

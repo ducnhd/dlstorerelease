@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/style/shop.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/style/client.css" />
+
+<nav aria-label="breadcrumb">
+    <p>SHOP</p>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">SHOP</li>
+    </ol>
+</nav>
+
+<div class="container">
+    <div class="col-3 left-content" id="left-content">
+        <div class="title">
+            <p>
+                Danh mục sản phẩm
+            </p>
+        </div>
+        <div class="select">
+            <ul>
+                <li>
+                    <a href="#" data-type="all" style="color: red">All</a>
+                </li>
+                {{#each types}}
+                <li>
+                    <a href="#" data-type="type{{id}}">{{Name}}</a>                    
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+        </div>
+        <div class="col-11">
+            <div class="row">
+                <h1 id="heading">All</h1>
+            </div>
+            <div class="row">
+                {{#each product}}
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 product type{{TypeId}}">
+                    <a class="type{{TypeId}}" href="{{imagepathLarge}}" data-title="Xem ảnh đầy đủ" data-lightbox="products">
+                        <img src="{{imagepathLarge}}" alt="{{title}}">
+                    </a>
+                    <p class="textRed">{{pricing}}</p>
+                    <p class="name">{{title}}</p>
+                    <p style="color: blue; cursor: pointer" onclick="window.location.assign('/shop/' + {{id}})">Xem chi tiết</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascript/shop.js">
+console.log(product);
+</script>

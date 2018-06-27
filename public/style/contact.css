@@ -1,0 +1,66 @@
+.contact {
+    min-height: 550px;
+    background: url(../public/images/topic/4.jpg) center center no-repeat;
+}
+
+.contact-left {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background: rgba(90, 162, 154, 0.75);
+    color: white;
+    top: 100px;
+    float: left;
+}
+
+.contact-left a {
+    color: white;
+    font-weight: bold;
+}
+
+.contact-left a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.contact-right {
+    float: right;
+    top: 50px;
+}
+
+.contact-right input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.contact-right form button {
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: rgba(80, 167, 48, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-right textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.start span {
+    cursor: pointer;
+}
+
+.checked {
+    color: orange;
+}
+
+.tag span {
+    color: blue;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-right: 3px;
+}

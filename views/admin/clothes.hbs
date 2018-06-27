@@ -1,0 +1,217 @@
+<link rel="stylesheet" type="text/css" media="screen" href="/style/clothes.css" />
+<script src="/javascript/clothes.js"></script>
+
+<h2 id="title">Quản lý mẫu áo</h2>
+
+<section id="form">
+    <form id="search" class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="input" class="sr-only">Search</label>
+            <input type="text" class="form-control" id="input" placeholder="Search" onkeyup="return search()">
+            <img class="icon" src="/images/icon/icon-search.png" alt="">
+        </div>
+
+        <a href="#"></a>
+    </form>
+
+    <section id="nav">
+        <a data-quote="all" href="#">Tất cả</a>
+        <a data-quote="woman" href="#">Áo nam</a>
+        <a data-quote="man" href="#">Áo nữ</a>
+        <a data-quote="couple" href="#">Áo cặp</a>
+        <a data-quote="uniform" href="#">Áo nhóm</a>
+    </section>
+</section>
+
+<button type="button" class="new-cloth btn add">Thêm mẫu áo</button>
+
+<section id="fashion">
+    <div class="fashion woman" data-code="C001">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nữ abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(1)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(1)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(1)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion couple" data-code="C002">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo cặp abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(2)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(2)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(2)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion man" data-code="C003">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nam abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(3)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(3)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(3)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion uniform" data-code="C004">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nhóm abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(4)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(4)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(4)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion man" data-code="C006">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nam abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(5)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(5)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(5)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion woman" data-code="C007">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nữ 123</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(6)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(6)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(6)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion woman" data-code="C008">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nữ def</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(7)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(7)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(7)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion uniform" data-code="C009">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nhóm abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(8)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(8)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(8)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion couple" data-code="C010">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo cặp abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(9)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(9)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(9)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion man" data-code="C011">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nam abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(10)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(10)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(10)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion woman" data-code="C012">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nữ ghi</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(11)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(11)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(11)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion man" data-code="C013">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nam abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(12)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(12)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(12)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion couple" data-code="C014">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo cặp abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(13)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(13)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(13)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion uniform" data-code="C015">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nhóm abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(14)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(14)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(14)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion uniform" data-code="C016">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nhóm abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(15)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(15)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(15)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion couple" data-code="C017">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo cặp abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(16)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(16)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(16)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion couple" data-code="C018">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo cặp abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(17)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(17)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(17)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+    <div class="fashion uniform" data-code="C019">
+        <img id="icon1" src="/images/product_home/i1.jpeg" alt="">
+        <p>Áo nhóm abc</p>
+        <p style="color: #ff8a00">Giá: 120.000 vnđ</p>
+        <img onclick="return filter(18)" src="/images/admin/icon-info.png" alt="info" class="cursor">
+        <img onclick="return filter(18)" src="/images/admin/icon-edit.png" alt="edit" class="cursor">
+        <img onclick="return del(18)" src="/images/admin/icon-del.png" alt="del" class="cursor">
+    </div>
+</section>
+
+<div class="overlay add-cloth" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <a class="close">x</a>
+            <h3>Thêm áo</h3>
+            <form>
+                <div class="image">
+                    <img src="/images/admin/none.jpg" alt="none">
+                    <input type="file" name="mf" id="mf">
+                    <br>
+                    <br>
+                    <label for="mu">URL: </label>
+                    <input type="url" name="mu" id="mu">
+                    <br>
+                </div>
+                <div id="form">
+                    <label for="code">Mã áo:</label>
+                    <input class="text" type="text" name="code" id="code">
+                    <br>
+                    <label for="name">Tên áo:</label>
+                    <input class="text" type="text" name="name" id="name">
+                    <br>
+                    <label for="type">Loại áo:</label>
+                    <p>
+                        <input type="checkbox" name="type" id="t1">Áo nam &nbsp;&nbsp;
+                        <input type="checkbox" name="type" id="t2">Áo nữ</p>
+                    <p>
+                        <input type="checkbox" name="type" id="t3">Áo nhóm&nbsp;
+                        <input type="checkbox" name="type" id="t4">Áo cặp</p>
+                    <label for="price">Giá:</label>
+                    <input class="text" type="number" name="price" id="price" step="1000">
+                    <br>
+                    <label for="decribe">Mô tả: </label>
+                    <br>
+                    <textarea type="text" name="decribe" id="decribe"></textarea>
+                    <br>
+                    <button id="add" type="submit" class="btn btn-success">Thêm áo</button>
+                    <button id="change" type="submit" class="btn btn-info">Thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

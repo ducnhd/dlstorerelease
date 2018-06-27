@@ -1,0 +1,19 @@
+<div class="login-wrapper">
+    <div class="login-content">
+        <a class="close">x</a>
+        <h3>Đăng nhập</h3>
+        <form method="post" action="/signin">
+            <label for="username">
+                Tài khoản:
+                <input type="text" name="username" id="username" placeholder="Tài khoản nằm trong khoảng 8 đến 20 kí tự" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"
+                    required="required" />
+            </label>
+            <label for="password">
+                Mật khẩu:
+                <input type="password" name="password" id="password" placeholder="Mật khẩu phải có ít nhất 1 chữ ghi hoa, 1 chữ ghi thường và 1 chữ số"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+            </label>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+</div>

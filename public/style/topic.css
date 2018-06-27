@@ -1,0 +1,29 @@
+nav p {
+    margin-left: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.intro img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.intro p {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.product p {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.another {
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+.another img {
+    width: 100%;
+}

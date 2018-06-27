@@ -1,0 +1,40 @@
+{
+  "name": "buoi10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "start": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.7.2",
+    "connect-flash": "^0.1.1",
+    "connect-pg-simple": "^4.2.1",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-handlebars-paginate": "^1.0.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
+    "knex": "^0.14.6",
+    "model": "^6.0.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.10",
+    "serve-favicon": "^2.5.0",
+    "session": "^0.1.0",
+    "vn-payments": "^1.0.3"
+  }
+}

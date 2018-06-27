@@ -1,0 +1,93 @@
+header {
+    color: tomato;
+    background-color: white;
+    border-bottom: solid 2px black;
+    padding: 10px 20px 10px 20px;
+    min-height: 60px;
+}
+
+.overlayLinkSignUp {
+    cursor: pointer;
+}
+
+.overlayLinkSignIn {
+    cursor: pointer;
+}
+
+section {
+    margin-top: 45px;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    align-items: flex-end;
+}
+
+header ul a {
+    padding-left: 20px;
+    float: left;
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    background-color: snow;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    min-height: 70px;
+    overflow: hidden;
+}
+
+nav ul {
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul a,
+nav ul a:hover {
+    margin-left: 10px;
+    list-style: none;
+    border: red solid 1px;
+    border-radius: 5px;
+    background-color: tomato;
+    width: 110px;
+    height: 45px;
+    float: left;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: italic;
+}
+
+nav ul img {
+    padding: 5px 0 0 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1000;
+}

@@ -1,0 +1,224 @@
+<link rel="stylesheet" href="/style/design.css">
+<link type="text/css" rel="stylesheet" href="/vendor/css/jquery.miniColors.css" />
+<link href="/vendor/css/bootstrap.min.css" rel="stylesheet">
+<link href="/vendor/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" href="/style/client.css" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="/vendor/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/vendor/js/fabric.js"></script>
+<script type="text/javascript" src="/vendor/js/tshirtEditor.js"></script>
+<script type="text/javascript" src="/vendor/js/jquery.miniColors.min.js"></script>
+
+<nav aria-label="breadcrumb">
+    <p>Design</p>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang chủ/</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">Design</li>
+    </ol>
+</nav>
+
+<div class="container">
+    <section id="typography">
+        <div class="page-header">
+            <h1>Thiết kế áo</h1>
+        </div>
+    </section>
+    <div class="row design">
+        <div class="col-sm-12 col-lg-3">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab1" data-toggle="tab">Chọn áo thun</a>
+                    </li>
+                    <li class="">
+                        <a href="#tab2" data-toggle="tab">Trang trí</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="well">
+                            <select>
+                                <option value="1" selected="selected">Áo tay ngắn</option>
+                            </select>
+                        </div>
+                        <div class="well">
+                            <ul class="nav">
+                                <li class="color-preview" title="White" style="background-color:#ffffff;"></li>
+                                <li class="color-preview" title="Dark Heather" style="background-color:#616161;"></li>
+                                <li class="color-preview" title="Gray" style="background-color:#f0f0f0;"></li>
+                                <li class="color-preview" title="Charcoal" style="background-color:#5b5b5b;"></li>
+                                <li class="color-preview" title="Black" style="background-color:#222222;"></li>
+                                <li class="color-preview" title="Heather Orange" style="background-color:#fc8d74;"></li>
+                                <li class="color-preview" title="Heather Dark Chocolate" style="background-color:#432d26;"></li>
+                                <li class="color-preview" title="Salmon" style="background-color:#eead91;"></li>
+                                <li class="color-preview" title="Chesnut" style="background-color:#806355;"></li>
+                                <li class="color-preview" title="Dark Chocolate" style="background-color:#382d21;"></li>
+                                <li class="color-preview" title="Citrus Yellow" style="background-color:#faef93;"></li>
+                                <li class="color-preview" title="Avocado" style="background-color:#aeba5e;"></li>
+                                <li class="color-preview" title="Kiwi" style="background-color:#8aa140;"></li>
+                                <li class="color-preview" title="Irish Green" style="background-color:#1f6522;"></li>
+                                <li class="color-preview" title="Scrub Green" style="background-color:#13afa2;"></li>
+                                <li class="color-preview" title="Teal Ice" style="background-color:#b8d5d7;"></li>
+                                <li class="color-preview" title="Heather Sapphire" style="background-color:#15aeda;"></li>
+                                <li class="color-preview" title="Sky" style="background-color:#a5def8;"></li>
+                                <li class="color-preview" title="Antique Sapphire" style="background-color:#0f77c0;"></li>
+                                <li class="color-preview" title="Heather Navy" style="background-color:#3469b7;"></li>
+                                <li class="color-preview" title="Cherry Red" style="background-color:#c50404;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="well">
+                            <div class="input-append">
+                                <input class="span2" id="text-string" type="text" placeholder="Thêm chữ...">
+                                <button id="add-text" class="btn" title="Add text">
+                                    <i class="icon-share-alt"></i>
+                                </button>
+                                <hr>
+                            </div>
+                            <div id="avatarlist">
+                                <img style="cursor:pointer;" class="img-polaroid" src="/images/design/invisibleman.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <div align="center" style="min-height: 32px;">
+                <div class="clearfix">
+                    <div class="btn-group inline pull-left" id="texteditor" style="display:none">
+                        <button id="font-family" class="btn dropdown-toggle" data-toggle="dropdown" title="Font Style">
+                            <i class="icon-font" style="width:19px;height:19px;"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="font-family-X">
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Arial');" class="Arial">Arial</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Helvetica');" class="Helvetica">Helvetica</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Myriad Pro');" class="MyriadPro">Myriad Pro</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Delicious');" class="Delicious">Delicious</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Verdana');" class="Verdana">Verdana</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Georgia');" class="Georgia">Georgia</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Courier');" class="Courier">Courier</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Comic Sans MS');" class="ComicSansMS">Comic Sans MS</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Impact');" class="Impact">Impact</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Monaco');" class="Monaco">Monaco</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Optima');" class="Optima">Optima</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Hoefler Text');" class="Hoefler Text">Hoefler Text</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Plaster');" class="Plaster">Plaster</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#" onclick="setFont('Engagement');" class="Engagement">Engagement</a>
+                            </li>
+                        </ul>
+                        <button id="text-bold" class="btn" data-original-title="Bold">
+                            <img src="/images/design/font_bold.png" height="" width="">
+                        </button>
+                        <button id="text-italic" class="btn" data-original-title="Italic">
+                            <img src="/images/design/font_italic.png" height="" width="">
+                        </button>
+                        <button id="text-strike" class="btn" title="Strike">
+                            <img src="/images/design/font_strikethrough.png" height="" width="">
+                        </button>
+                        <button id="text-underline" class="btn" title="Underline">
+                            <img src="/images/design/font_underline.png">
+                        </button>
+
+                    </div>
+                    <div class="pull-right" id="imageeditor" style="display:none">
+                        <div class="btn-group">
+                            <button class="btn" id="bring-to-front" title="Bring to Front">
+                                <i class="icon-fast-backward rotate" style="height:19px;"></i>
+                            </button>
+                            <button class="btn" id="send-to-back" title="Send to Back">
+                                <i class="icon-fast-forward rotate" style="height:19px;"></i>
+                            </button>
+                            <button id="flip" type="button" class="btn" title="Show Back View">
+                                <i class="icon-retweet" style="height:19px;"></i>
+                            </button>
+                            <button id="remove-selected" class="btn" title="Delete selected item">
+                                <i class="icon-trash" style="height:19px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="shirtDiv" class="page" style="width: 530px; height: 630px; position: relative; background-color: rgb(255, 255, 255);">
+                <img id="tshirtFacing" src="/images/design/crew_front.png"></img>
+                <div id="drawingArea" style="position: absolute;top: 100px;left: 160px;z-index: 10;width: 200px;height: 400px;">
+                    <canvas id="tcanvas" width=200 height="400" class="hover"></canvas>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-12 col-lg-3">
+            <div class="well">
+                <h3>Tổng tiền cần thanh toán</h3>
+                <p>
+                    <table class="table">
+                        <tr>
+                            <td>Áo tay ngắn</td>
+                            <td align="right">120000</td>
+                        </tr>
+                        <tr>
+                            <td>Họa tiết mặt trước</td>
+                            <td align="right">30000</td>
+                        </tr>
+                        <tr>
+                            <td>Họa tiết mặt sau</td>
+                            <td align="right">30000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Tổng tiền</strong>
+                            </td>
+                            <td align="right">
+                                <strong>180000</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+                <button type="button" class="btn btn-large btn-block btn-success" name="addToTheBag" onclick="window.location.assign('cart.html')">Thêm vào giỏ hàng
+                    <i class="icon-briefcase icon-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="guide">
+        <h3>HƯỚNG DẪN THIẾT KẾ ÁO ONLINE</h3>
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/EzcW1lpd_Yw" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        <h5 style="text-align: center">Video hướng dẫn thiết kế áo</h5>
+    </div>
+</div>

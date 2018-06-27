@@ -1,0 +1,25 @@
+<div class="login-wrapper">
+    <div class="login-content">
+        <a class="close">x</a>
+        <h3>Đăng ký</h3>
+        <form method="post" action="/signup">
+            <label for="name">
+                Tên đầy đủ:
+                <input type="text" name="name" placeholder="Your name" id="name" required="required" />
+            </label>
+            <label for="email">
+                Email / Tài khoản:
+                <input type="text" name="email" id="email" placeholder="Your email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required"
+                />
+            </label>
+            <label for="password">
+                Password / Mật khẩu:
+                <input type="password" name="password" id="password" placeholder="Your password" required="required" />
+            </label>
+            <label for="receivedInformation">
+                <input type="radio" name="receivedInformation" id="receivedInformation" /> Đăng ký nhận thông tin
+            </label>
+            <button type="submit" onclick="changeToClient()">Đăng ký</button>
+        </form>
+    </div>
+</div>
